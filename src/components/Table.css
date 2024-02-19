@@ -1,0 +1,48 @@
+
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .orders-table th,
+  .orders-table td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .orders-table th {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .orders-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .orders-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  /* Style for the link icon */
+.orders-table .link-icon {
+  cursor: pointer;
+  color: #007bff; /* Example color for the icon */
+}
+
+/* Adjust the padding for the checkbox and icon cells if needed */
+.orders-table td.checkbox-cell,
+.orders-table td.link-icon-cell {
+  padding: 8px;
+}
+
+/* Centering the checkbox and icon */
+.orders-table td.checkbox-cell input[type="checkbox"],
+.orders-table td.link-icon-cell {
+  text-align: center;
+  display: block;
+}
+
+/* Additional styles to visually align the checkbox and icon */
+.orders-table td.checkbox-cell {
+  width: 1%; /* Prevent the checkbox column from becoming too wide */
+  white-space: nowrap;
+}

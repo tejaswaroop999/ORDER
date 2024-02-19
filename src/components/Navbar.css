@@ -1,0 +1,28 @@
+.search-container {
+  display: flex;
+  justify-content: space-between; /* This will push the h1 to the left and button to the right */
+  align-items: center; /* This will vertically center align items */
+  padding: 10px; /* Adjust padding as needed */
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Add responsiveness if needed */
+@media (max-width: 600px) {
+  .search-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-button {
+    margin-top: 10px; /* Add some space between the h1 and the button on small screens */
+    align-self: flex-end; /* Aligns the button to the right on small screens */
+  }
+}
